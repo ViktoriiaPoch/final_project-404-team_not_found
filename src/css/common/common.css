@@ -1,10 +1,16 @@
-/* Styles for Mobile devices */
+/* __________Styles for Mobile devices */
 
 .section {
   margin-bottom: 80px 0;
 }
 
 .section-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.125;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
 }
 
 .section-text {
@@ -14,6 +20,32 @@
   color: rgba(18, 20, 23, 0.5);
 }
 
-/* Styles for Tablet devices */
+/* __________Styles for Tablet devices */
 
-/* Styles for Desktop devices */
+@media only screen and (min-width: 768px) {
+  .section {
+    margin-bottom: 100px 0;
+  }
+  .section-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .section-text {
+    font-size: 18px;
+    line-height: 1.66667;
+  }
+}
+
+/* __________Styles for Desktop devices */
+
+@media only screen and (min-width: 1200px) {
+  .section {
+    margin-bottom: 150px 0;
+  }
+  .section-title {
+    /* так само як таблет */
+  }
+  .section-text {
+    /* так само як таблет */
+  }
+}

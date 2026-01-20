@@ -3,7 +3,7 @@
 @import url('./common/base.css');
 @import url('./common/common.css');
 @import url('./common/container.css');
-@import url('./commonsanimations.css');
+@import url('./common/animations.css');
 
 /* Sections style */
 @import url('./partials/header.css');
