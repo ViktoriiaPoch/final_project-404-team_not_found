@@ -1,45 +1,43 @@
-.hero {
-    padding-top: 8px;
-    padding-bottom: 80px;
-    color: #fff;
-    background-color: gray;
-}
-
-.hero__title {
+.hero-title {
     margin-bottom: 40px;
     font-size: 38px;
     font-weight: 700;
     line-height: 1.05;
     color: #fff;
 }
-.greenspan {
+.hero-title-accent {
     color: #BEE8CC;
 }
 
 .hero {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    position: relative;
-    justify-content: flex-end;
-    border-radius: 16px;
-    min-width: 335px;
-    height: 708px;
-    padding-left: 20px;
-    padding-right: 14px;
-    background: linear-gradient(57deg,
+padding: 20px 14px 80px 20px;
+color: #fff;
+background-color: gray;
+margin: 0 14px;
+    
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+position: relative;
+justify-content: flex-end;
+
+border-radius: 16px;
+min-width: 335px;
+height: 708px;
+background: linear-gradient(57deg,
     rgba(0, 0, 0, 0.4) 0%,
     rgba(0, 0, 0, 0) 100%),
     url() no-repeat;
-    background-size: cover;
+background-size: cover;
 }
 
 .hero-btn-leave {
+    padding: 14px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 295px;
-    height: 52px;
+    width: 100%;
+    max-width: 295px;
     background-color: #4dc274;
     color: #fff;
     font-size: 14px;
@@ -47,6 +45,7 @@
     line-height: 1.71;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
 }
 
 .hero-btn-leave:hover,
@@ -76,6 +75,6 @@
     fill: #4dc274;
 }
 
-.hero__button-round:hover .hero__button-icon {
+.scroll-btn-icon:hover .scroll-btn-icon {
     fill: #fff;
 }
