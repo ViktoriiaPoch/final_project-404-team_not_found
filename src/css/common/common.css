@@ -7,7 +7,7 @@
 .section-title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 1.125;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   text-align: center;
   color: #121417;
@@ -15,7 +15,7 @@
 
 .section-subtitle {
   font-size: 14px;
-  line-height: 1.71429;
+  line-height: 1.7;
   text-align: center;
   color: rgba(18, 20, 23, 0.5);
 }
@@ -32,13 +32,13 @@
   }
   .section-subtitle {
     font-size: 18px;
-    line-height: 1.66667;
+    line-height: 1.7;
   }
 }
 
 /* __________Styles for Desktop devices */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .section {
     margin-bottom: 150px;
   }
