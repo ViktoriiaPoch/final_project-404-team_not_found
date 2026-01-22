@@ -1,1 +1,156 @@
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(18, 20, 23, 0.5);
+}
 
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-team {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #121417;
+}
+
+.underline-green {
+    display: inline-block;
+    border-bottom: 20px solid #BEE8CC;
+    border-radius: 8px;
+    width: 170px;
+    height: 20px;
+         }
+
+.section-subtitle {
+    max-width: 709px;
+    margin: 16px auto 64px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+/* --- Team Cards --- */
+
+.gallery-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.item-gallery.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 264px;
+    padding: 32px 16px;
+    box-sizing: border-box;
+}
+
+.item-gallery img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* -- Card Content -- */
+
+.card-team {
+    text-align: center;
+}
+
+.team-title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    color: #121417;
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(18, 20, 23, 0.5);
+    margin: 0;
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 24px;
+}
+
+
+/* Mobile */
+@media (min-width: 375px) {
+    .gallery-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .item-gallery.card {
+        flex: 1 1 calc(100% - 32px);
+        max-width: 264px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 36px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+        margin-bottom: 64px;
+    }
+
+    .gallery-list {
+        justify-content: space-around;
+        gap: 32px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+    .section-title {
+        font-size: 40px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+        margin-bottom: 72px;
+    }
+
+    .gallery-list {
+        justify-content: center;
+        gap: 32px;
+    }
+}
