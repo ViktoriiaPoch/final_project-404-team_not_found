@@ -1,17 +1,8 @@
-.reviews .container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .reviews-item:nth-child(n + 2) {
   display: none;
 }
-
-.reviews-title {
-  font-size: 32px;
-  line-height: 1.12;
+.reviews .section-title {
   margin-bottom: 16px;
-  color: #121417;
 }
 
 .reviews-title-accent {
@@ -30,16 +21,8 @@
   border-radius: 8px;
   z-index: -1;
 }
-.reviews-subtitle {
-  font-size: 14px;
-  line-height: 1.5;
+.reviews .section-subtitle {
   margin-bottom: 36px;
-  color: rgba(12, 14, 17, 0.5);
-}
-
-.reviews-title,
-.reviews-subtitle {
-  text-align: center;
 }
 
 .reviews-list {
@@ -65,7 +48,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 0;
 }
 
 .reviews-avatar {
@@ -92,9 +74,63 @@
 }
 
 .reviews-comment {
-  margin: 0 auto;
-  max-width: 267px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 14px;
   line-height: 1.5;
   color: rgba(12, 14, 17, 0.5);
+}
+
+/* TABLET (768px+) */
+
+@media screen and (min-width: 768px) {
+  .reviews-item:nth-child(n + 2) {
+    display: block;
+  }
+
+  .reviews-item:nth-child(n + 3) {
+    display: none; /* прячем 3-ю и дальше */
+  }
+
+  .reviews-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .reviews-item {
+    flex-basis: calc((100% - 32px) / 2);
+    padding: 32px 24px;
+  }
+
+  .reviews-top {
+    margin-bottom: 24px;
+  }
+
+  .reviews-comment {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* DESKTOP (1280px+) */
+
+@media screen and (min-width: 1280px) {
+  .reviews-item:nth-child(n + 2) {
+    display: block;
+  }
+
+  /* ✅ 2) и отменяем tablet-скрытие 3-й */
+  .reviews-item:nth-child(n + 3) {
+    display: block;
+  }
+
+  .reviews-list {
+    gap: 32px;
+  }
+
+  .reviews-item {
+    flex-basis: calc((100% - 64px) / 3);
+  }
 }
