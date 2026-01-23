@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: "Manrope", sans-serif;
-    color: #121417;
-    background: #ffffff;
-}
-
 img {
     display: block;
     max-width: 100%;
