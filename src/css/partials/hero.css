@@ -93,6 +93,7 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 @media (min-width: 768px) {
     .hero-title {
         padding-top: 260px;
@@ -119,6 +120,18 @@ color: #fff;
 max-width: 1200px;
 }
 
+=======
+.hero {
+display: flex;
+justify-items: center;
+margin: 8px 0 80px;
+}
+.hero-contqiner {
+color: #fff;
+max-width: 1200px;
+}
+
+>>>>>>> Stashed changes
 .hero .hero-container .hero-wrapper {
     position: relative;
     padding: 0 20px;
@@ -131,6 +144,9 @@ max-width: 1200px;
             rgba(0, 0, 0, 0.4) 39.23%,
             rgba(0, 0, 0, 0) 66.28%),
         url('../../img/hero-mobile-1x.jpg');
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 
