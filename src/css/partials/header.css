@@ -1,4 +1,75 @@
-.header {
-  background-color: tomato;
-  font-size: 40px;
+.page-header {
+  background-color: #fff;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list,
+.header-social-list {
+  display: none;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+.header-logo {
+  display: block;
+  color: #121417;
+  padding: 20px 0;
+}
+
+.logo-part {
+  color: #4dc274;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #121417;
+}
+
+.burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-icon {
+  display: block;
+}
+
+/* __________Styles for Tablet devices */
+
+@media only screen and (min-width: 768px) {
+}
+
+/* __________Styles for Desktop devices */
+
+@media only screen and (min-width: 1280px) {
+  .burger-btn {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-social-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 }
