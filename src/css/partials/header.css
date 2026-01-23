@@ -67,6 +67,24 @@
     gap: 12px;
   }
 
+  .header-social-item .social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #121417;
+    border-radius: 10px;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    /* gap: 12px; */
+  }
+
+  .social-link:hover,
+  .social-link:focus {
+    fill: #4dc274;
+    border: 1px solid rgba(77, 194, 116, 0.1);
+  }
+
   .header-nav {
     display: flex;
     align-items: center;
