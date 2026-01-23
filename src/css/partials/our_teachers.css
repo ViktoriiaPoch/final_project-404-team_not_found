@@ -1,17 +1,8 @@
-body {
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: rgba(18, 20, 23, 0.5);
-}
-
+/* Our Teachers Section */
 .container {
     width: 100%;
-    max-width: 1280px;
-    padding: 0 15px;
     margin: 0 auto;
+    max-width: 1280px;
 }
 
 .section-team {
@@ -20,27 +11,33 @@ body {
     text-align: center;
 }
 
-.section-title {
-    font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: #121417;
-}
 
-.underline-green {
+.title-accent-green {
+    position: relative;
+    z-index: 1;
     display: inline-block;
-    border-bottom: 20px solid #BEE8CC;
-    border-radius: 8px;
-    width: 170px;
-    height: 20px;
-         }
+        }
+    
+.title-accent-green::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    bottom: 2px;
+    height: 12px;
+    background-color: #c9ebd4;
+    z-index: -1;
+    border-radius: 4px;
+        }
 
+   
 .section-subtitle {
     max-width: 709px;
     margin: 16px auto 64px;
     font-size: 18px;
     line-height: 1.6;
     color: rgba(18, 20, 23, 0.5);
+    text-align: center;
 }
 
 /* --- Team Cards --- */
@@ -60,7 +57,6 @@ body {
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
-    max-width: 264px;
     padding: 32px 16px;
     box-sizing: border-box;
 }
@@ -124,7 +120,7 @@ body {
 /* Tablet */
 @media (min-width: 768px) {
     .section-title {
-        font-size: 36px;
+        font-size: 40px;
     }
 
     .section-subtitle {
