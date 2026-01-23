@@ -1,0 +1,136 @@
+.reviews-item:nth-child(n + 2) {
+  display: none;
+}
+.reviews .section-title {
+  margin-bottom: 16px;
+}
+
+.reviews-title-accent {
+  position: relative;
+  display: inline-block;
+}
+
+.reviews-title-accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 20px;
+  background-color: #bee8cc;
+  border-radius: 8px;
+  z-index: -1;
+}
+.reviews .section-subtitle {
+  margin-bottom: 36px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.reviews-item {
+  padding: 24px 20px 36px 20px;
+  border-radius: 16px;
+  background-color: #f3f5f6;
+}
+
+.reviews-top {
+  padding: 14px;
+  border-radius: 12px;
+  background-color: #4dc274;
+  margin-bottom: 20px;
+}
+
+.reviews-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reviews-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews-name {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 2px;
+}
+
+.reviews-role {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.reviews-name,
+.reviews-role {
+  color: #ffffff;
+}
+
+.reviews-comment {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(12, 14, 17, 0.5);
+}
+
+/* TABLET (768px+) */
+
+@media screen and (min-width: 768px) {
+  .reviews-item:nth-child(n + 2) {
+    display: block;
+  }
+
+  .reviews-item:nth-child(n + 3) {
+    display: none; /* прячем 3-ю и дальше */
+  }
+
+  .reviews-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .reviews-item {
+    flex-basis: calc((100% - 32px) / 2);
+    padding: 32px 24px;
+  }
+
+  .reviews-top {
+    margin-bottom: 24px;
+  }
+
+  .reviews-comment {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* DESKTOP (1280px+) */
+
+@media screen and (min-width: 1280px) {
+  .reviews-item:nth-child(n + 2) {
+    display: block;
+  }
+
+  /* ✅ 2) и отменяем tablet-скрытие 3-й */
+  .reviews-item:nth-child(n + 3) {
+    display: block;
+  }
+
+  .reviews-list {
+    gap: 32px;
+  }
+
+  .reviews-item {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+}
