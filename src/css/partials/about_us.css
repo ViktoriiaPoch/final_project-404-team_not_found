@@ -1,1 +1,212 @@
+/* ========================================
+   CSS Reset
+   ======================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* ========================================
+   About Us Section - Mobile First
+   ======================================== */
 
+/* MOBILE STYLES (320px - 767px) - BASE */
+
+.section-text {
+    font-weight: 400;
+    font-size: 14px;
+    /* ← З Figma */
+    line-height: 1.71;
+    /* ← 171% */
+    text-align: center;
+    color: rgba(18, 20, 23, 0.5);
+    max-width: 334px;
+    /* ← З Figma */
+    margin: 16px auto 0;
+    /* ← 16px зверху, центрування */
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 335px;
+    /* ← ЗМІНИЛА з width на max-width */
+    width: 100%;
+    /* ← ДОДАЛА */
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin: 40px auto 0;
+    /* ← ДОДАЛА auto для центрування */
+}
+
+.feature-card {
+    background-color: #f3f5f6;
+    padding: 24px 20px;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+}
+
+.feature-card-image {
+    border-radius: 16px;
+    width: 100%;
+    height: 313px;
+    background-color: #4dc274;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    min-height: 250px;
+    order: 5;
+}
+
+.feature-number {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    line-height: 1.5;
+    color: #4dc274;
+    margin-bottom: 16px;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    color: #121417;
+    margin: 0;
+}
+
+.feature-image {
+    width: 200px;
+    /* ← ЗБІЛЬШИЛА з 100px */
+    height: 200px;
+    /* ← ЗБІЛЬШИЛА з 100px */
+    object-fit: contain;
+}
+
+.placeholder-emoji {
+    font-size: 150px;
+    /* ← Також збільшила для consistency */
+    line-height: 1;
+    display: block;
+}
+
+/* TABLET STYLES (768px - 1199px) */
+@media only screen and (min-width: 768px) {
+    .section-text {
+        font-size: 18px;
+        line-height: 1.67;
+        max-width: 658px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .features-list {
+        display: grid;
+        grid-template-columns: 336px 336px;
+        gap: 32px;
+        max-width: 704px;
+        margin: 64px auto 0;
+    }
+
+    .feature-card {
+        padding: 32px;
+        border-radius: 30px;
+    }
+
+    .feature-card-image {
+        grid-column: span 2;
+        border-radius: 30px;
+        height: 243px;
+        order: 5;
+    }
+
+    .feature-number {
+        font-size: 28px;
+        line-height: 1.14;
+        margin-bottom: 16px;
+    }
+
+    .feature-title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .feature-image {
+        width: 254px;
+        height: 211px;
+    }
+}
+
+/* DESKTOP STYLES (1200px+) */
+@media only screen and (min-width: 1200px) {
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin: 64px 0 0 0;
+}
+
+.feature-card {
+    background-color: #f3f5f6;
+    padding: 32px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+}
+
+.feature-card-image {
+    background-color: #4dc274;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 0;
+    grid-row: span 2;
+    /* ← КЛЮЧОВЕ! Займає 2 ряди */
+}
+
+.feature-number {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #4dc274;
+    margin-bottom: 16px;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #121417;
+    margin: 0;
+}
+
+.feature-image {
+    max-width: 180px;
+    height: auto;
+    object-fit: contain;
+}
+
+.placeholder-emoji {
+    font-size: 150px;
+    line-height: 1;
+    display: block;
+}
+}
