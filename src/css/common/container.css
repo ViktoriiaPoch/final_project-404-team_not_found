@@ -4,7 +4,7 @@
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
 /* __________Styles for Tablet devices */
@@ -18,9 +18,9 @@
 
 /* __________Styles for Desktop devices */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .container {
-    max-width: 1054px;
-    padding: 0 15px;
+    max-width: 1056px;
+    padding: 0 16px;
   }
 }
