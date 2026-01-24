@@ -4,12 +4,12 @@ justify-content: center;
 margin: 8px 0 80px;
 }
 
-.hero .hero-container {
+.hero .container {
     color: #fff;
     max-width: 1200px;
 }
 
-.hero .hero-container .hero-wrapper {
+.hero .container .hero-wrapper {
     position: relative;
     margin: 0 20px;
     padding: 20px 14px 14px 20px;
@@ -30,7 +30,7 @@ margin: 8px 0 80px;
 @media screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx),
 screen and (min-device-pixel-ratio: 2) {
-    .hero .hero-container .hero-wrapper {
+    .hero .container .hero-wrapper {
         background-image: linear-gradient(357.37deg,
                 rgba(0, 0, 0, 0.4) 39.23%,
                 rgba(0, 0, 0, 0) 66.28%),
@@ -39,7 +39,7 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 @media (min-width: 768px) {
-.hero .hero-container .hero-wrapper {
+.hero .container .hero-wrapper {
         padding: 0 32px;
         width: 704px;
         height: 857px;
@@ -54,7 +54,7 @@ screen and (min-device-pixel-ratio: 2) {
 @media screen and (min-width: 768px) and (min-resolution: 192dpi),
 screen and (min-width: 768px) and (min-resolution: 2dppx),
 screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
-    .hero .hero-container .hero-wrapper {
+    .hero .container .hero-wrapper {
         background-image: linear-gradient(95.97deg,
                 rgba(0, 0, 0, 0.4) 36.36%,
                 rgba(0, 0, 0, 0) 51.43%),
@@ -63,7 +63,7 @@ screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
 }
 
 @media (min-width: 1280px) {
-    .hero .hero-container .hero-wrapper {
+    .hero .container .hero-wrapper {
         padding: 0 64px;
         width: 1152px;
         height: 629px;
@@ -76,7 +76,7 @@ screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
     @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
-        .hero .hero-container .hero-wrapper {
+        .hero .container .hero-wrapper {
             background-image: linear-gradient(95.97deg,
                     rgba(0, 0, 0, 0.4) 36.36%,
                     rgba(0, 0, 0, 0) 51.43%),
