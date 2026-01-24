@@ -28,7 +28,7 @@
       rgba(0, 0, 0, 0.4) 39.23%,
       rgba(0, 0, 0, 0) 66.28%
     ),
-    url('../images/hero/hero-mb.webp');
+    url('../../images/hero/hero-mb.webp');
 }
 
 @media screen and (min-resolution: 192dpi),
@@ -40,7 +40,7 @@
         rgba(0, 0, 0, 0.4) 39.23%,
         rgba(0, 0, 0, 0) 66.28%
       ),
-      url('../images/hero/hero-mb@2.webp');
+      url('../../images/hero/hero-mb@2.webp');
   }
 }
 
@@ -55,7 +55,7 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       ),
-      url('../images/hero/hero-tb.webp');
+      url('../../images/hero/hero-tb.webp');
   }
 }
 
@@ -68,7 +68,7 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       ),
-      url('../images/hero/hero-tb@2.webp');
+      url('../../images/hero/hero-tb@2.webp');
   }
 }
 
@@ -82,7 +82,7 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       ),
-      url('../images/hero/hero-dt.webp');
+      url('../../images/hero/hero-dt.webp');
   }
 
   @media screen and (min-resolution: 192dpi),
@@ -94,7 +94,7 @@
           rgba(0, 0, 0, 0.4) 36.36%,
           rgba(0, 0, 0, 0) 51.43%
         ),
-        url('../images/hero/hero-dt@2.webp');
+        url('../../images/hero/hero-dt@2.webp');
     }
   }
 }
