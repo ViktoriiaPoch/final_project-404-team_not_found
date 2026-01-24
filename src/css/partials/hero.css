@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   justify-content: center;
-  margin: 8px 0 80px;
+  margin: 8px 20px 80px;
 }
 
 .hero .container {
@@ -29,6 +29,12 @@
       rgba(0, 0, 0, 0) 66.28%
     ),
     url('../../images/hero/hero-mb.webp');
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    margin-bottom: 96px;
+  }
 }
 
 @media screen and (min-resolution: 192dpi),
