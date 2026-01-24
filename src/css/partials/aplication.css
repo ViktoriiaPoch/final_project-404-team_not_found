@@ -20,7 +20,7 @@ img {
     white-space: nowrap;
 }
 
-/* mobile */
+/* MOBILE */
 
 .container {
     width: 100%;
@@ -35,7 +35,7 @@ img {
 
 .apply__head {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 }
 
 .apply__title {
@@ -59,7 +59,7 @@ img {
     right: 0;
     bottom: -0.18em;
     height: 0.5em;
-    background: #d4fde1;
+    background: #bee8cc;
     border-radius: 999px;
     z-index: -1;
 }
@@ -76,13 +76,13 @@ img {
     display: block;
 }
 
-/* card */
+/* CARD */
 
 .apply-card {
     display: none;
 }
 
-/* form */
+/* FORM */
 
 .apply-form {
     width: 100%;
@@ -130,6 +130,8 @@ img {
     box-shadow: 0 0 0 3px rgba(77, 194, 116, 0.18);
 }
 
+/* RADIO */
+
 .apply-form__teacher {
     border: 0;
     padding: 0;
@@ -137,7 +139,7 @@ img {
 }
 
 .apply-form__legend {
-    margin: 0 0 12px;
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
@@ -154,7 +156,6 @@ img {
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    user-select: none;
 }
 
 .radio__input {
@@ -180,7 +181,7 @@ img {
     border-radius: 50%;
     background: #4dc274;
     transform: scale(0);
-    transition: transform 0.25s ease;
+    transition: transform 250ms ease;
 }
 
 .radio__input:checked+.radio__control::after {
@@ -193,15 +194,22 @@ img {
     letter-spacing: -0.02em;
 }
 
+/* BUTTON */
+
 .apply-form__btn {
     width: 100%;
     height: 52px;
+    padding: 14px 87px;
     border: none;
     border-radius: 12px;
     background: #4dc274;
-    color: #ffffff;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
     font-size: 14px;
-    font-weight: 600;
+    line-height: 1.71;
+    color: #ffffff;
+
     cursor: pointer;
     transition: background-color 250ms ease;
 }
@@ -211,20 +219,24 @@ img {
     background: #38ae5f;
 }
 
+/* POLICY MOBILE */
+
 .apply-form__policy {
     margin-top: 12px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
     font-size: 12px;
-    line-height: 1.5;
-    color: rgba(18, 20, 23, 0.55);
+    line-height: 1.33;
+    color: rgba(18, 20, 23, 0.5);
 }
 
 .apply-form__link {
-    color: rgba(18, 20, 23, 0.75);
+    color: rgba(18, 20, 23, 0.5);
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-decoration-skip-ink: none;
 }
 
-/* tablet */
+/* TABLET */
 
 @media screen and (min-width: 768px) {
     .container {
@@ -242,7 +254,7 @@ img {
 
     .apply__title-accent::before {
         height: 0.4em;
-        bottom: 0em;
+        bottom: 0;
     }
 
     .apply__text {
@@ -274,12 +286,19 @@ img {
     }
 
     .apply-form__btn {
+        height: 60px;
+        padding: 16px 64px;
         font-size: 18px;
-        font-weight: 700;
+        line-height: 1.56;
+    }
+
+    .apply-form__policy {
+        font-size: 14px;
+        line-height: 1.71;
     }
 }
 
-/* desktop */
+/* DESKTOP */
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -288,7 +307,7 @@ img {
     }
 
     .apply {
-        padding: 100px 0;
+        padding: 80px 0 64px;
     }
 
     .apply__body {
@@ -321,37 +340,26 @@ img {
     }
 
     .apply-card__number {
-        margin: 0 0 14px;
+        margin-bottom: 14px;
+        font-family: "Manrope", sans-serif;
         font-weight: 700;
         font-size: 40px;
-        line-height: 1.1;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
         color: #ffffff;
     }
 
     .apply-card__desc {
-        margin: 0;
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
-        color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
     }
 
     .apply-form {
         max-width: 592px;
         flex: 1 1 auto;
-    }
-
-    .apply-form__legend {
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    .radio__text {
-        font-size: 18px;
-    }
-
-    .apply-form__btn {
-        margin-top: auto;
-        font-size: 18px;
-        font-weight: 700;
     }
 }
