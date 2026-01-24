@@ -11,7 +11,9 @@
 
 .hero .container .hero-wrapper {
   position: relative;
-  margin: 0 20px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
   padding: 20px 14px 14px 20px;
 
   display: flex;
@@ -53,7 +55,8 @@
 @media (min-width: 768px) {
   .hero .container .hero-wrapper {
     padding: 0 32px;
-    width: 704px;
+    width: 100%;
+    max-width: 704px;
     height: 857px;
     border-radius: 30px;
     background-image: linear-gradient(
@@ -81,7 +84,9 @@
 @media (min-width: 1280px) {
   .hero .container .hero-wrapper {
     padding: 0 64px;
-    width: 1152px;
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
     height: 629px;
     background-image: linear-gradient(
         95.97deg,
