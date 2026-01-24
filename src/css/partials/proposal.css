@@ -274,11 +274,16 @@
   width: 20px;
   height: 20px;
   flex: 0 0 20px;
+  display: block;
+  color: #4dc274;
+}
 
-  background-image: url('./images/icons.svg#icon-check');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
+@media (min-width: 768px) {
+  .proposal-icon {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
+  }
 }
 
 .proposal-text {
