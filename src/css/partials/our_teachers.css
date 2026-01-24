@@ -12,25 +12,6 @@
 }
 
 
-.title-accent-green {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-        }
-    
-.title-accent-green::after {
-    content: "";
-    position: absolute;
-    left: -2px;
-    right: -2px;
-    bottom: 2px;
-    height: 12px;
-    background-color: #c9ebd4;
-    z-index: -1;
-    border-radius: 4px;
-        }
-
-   
 .section-subtitle {
     max-width: 709px;
     margin: 16px auto 64px;
