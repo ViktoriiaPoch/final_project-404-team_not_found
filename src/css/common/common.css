@@ -49,3 +49,7 @@
     /* так само як таблет */
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
