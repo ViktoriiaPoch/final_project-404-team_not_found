@@ -1,1 +1,228 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 80px;
+}
 
+.hero .container {
+  color: #fff;
+  max-width: 1200px;
+}
+
+.hero .container .hero-wrapper {
+  position: relative;
+  margin: 0 20px;
+  padding: 20px 14px 14px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 709px;
+  border-radius: 16px;
+  background-image: linear-gradient(
+      357.37deg,
+      rgba(0, 0, 0, 0.4) 39.23%,
+      rgba(0, 0, 0, 0) 66.28%
+    ),
+    url('../../images/hero/hero-mb.webp');
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .hero .container .hero-wrapper {
+    background-image: linear-gradient(
+        357.37deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../../images/hero/hero-mb@2.webp');
+  }
+}
+
+@media (min-width: 768px) {
+  .hero .container .hero-wrapper {
+    padding: 0 32px;
+    width: 704px;
+    height: 857px;
+    border-radius: 30px;
+    background-image: linear-gradient(
+        95.97deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url('../../images/hero/hero-tb.webp');
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx),
+  screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+  .hero .container .hero-wrapper {
+    background-image: linear-gradient(
+        95.97deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url('../../images/hero/hero-tb@2.webp');
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero .container .hero-wrapper {
+    padding: 0 64px;
+    width: 1152px;
+    height: 629px;
+    background-image: linear-gradient(
+        95.97deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url('../../images/hero/hero-dt.webp');
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .hero .container .hero-wrapper {
+      background-image: linear-gradient(
+          95.97deg,
+          rgba(0, 0, 0, 0.4) 36.36%,
+          rgba(0, 0, 0, 0) 51.43%
+        ),
+        url('../../images/hero/hero-dt@2.webp');
+    }
+  }
+}
+
+.hero-title {
+  padding-top: 0;
+  margin-bottom: 40px;
+  font-size: 38px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: left;
+
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+.hero-title-accent {
+  color: #bee8cc;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    padding-top: 0px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 70px;
+    max-width: 488px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-title {
+    padding-top: 164px;
+    max-width: 564px;
+  }
+}
+
+.hero-btn-leave {
+  display: block;
+  width: 100%;
+  max-width: 306px;
+  box-sizing: border-box;
+  padding: 14px;
+  text-align: center;
+  margin-bottom: 72px;
+
+  color: #fff;
+  background: #4dc274;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: background-color 0.3s ease;
+
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+@media (min-width: 768px) {
+  .hero-btn-leave {
+    padding: 16px 64px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 295px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-btn-leave {
+    margin-bottom: 179px;
+  }
+}
+
+.hero-btn-leave:hover,
+.hero-btn-leave:focus {
+  background-color: #38ae5f;
+}
+
+.scroll-btn {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  outline: none;
+  border: none;
+
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+.scroll-btn:hover {
+  background-color: #4dc274;
+}
+
+.scroll-icon {
+  fill: #4dc274;
+  transition: fill 0.3s ease;
+}
+
+.scroll-btn:hover .scroll-icon,
+.scroll-btn:focus .scroll-icon {
+  fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .scroll-btn {
+    right: 32px;
+    bottom: 32px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
