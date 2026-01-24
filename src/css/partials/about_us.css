@@ -25,6 +25,23 @@
     margin: 16px auto 0;
     /* ← 16px зверху, центрування */
 }
+.section-title-accent {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+.section-title-accent::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.18em;
+    height: 0.5em;
+    background: #BEE8CC;
+    border-radius: 999px;
+    z-index: -1;
+}
 
 .features-list {
     display: flex;
@@ -101,6 +118,10 @@
 /* TABLET STYLES (768px - 1199px) */
 @media only screen and (min-width: 768px) {
     .section-text {
+        .section-title-accent::before {
+    height: 0.4em;
+    bottom: 0em;
+}
         font-size: 18px;
         line-height: 1.67;
         max-width: 658px;
