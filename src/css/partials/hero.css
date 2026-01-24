@@ -24,7 +24,7 @@ margin: 8px 0 80px;
     height: 709px;
     border-radius: 16px;
     background-image: linear-gradient(357.37deg, rgba(0, 0, 0, 0.4) 39.23%, rgba(0, 0, 0, 0) 66.28%),
-        url('../img/hero-mb.webp');
+        url('../images/hero-mb.webp');
         }
 
 @media screen and (min-resolution: 192dpi),
@@ -34,7 +34,7 @@ screen and (min-device-pixel-ratio: 2) {
         background-image: linear-gradient(357.37deg,
                 rgba(0, 0, 0, 0.4) 39.23%,
                 rgba(0, 0, 0, 0) 66.28%),
-            url('../img/hero-mb@2.webp');
+            url('../images/hero-mb@2.webp');
     }
 }
 
@@ -47,7 +47,7 @@ screen and (min-device-pixel-ratio: 2) {
         background-image: linear-gradient(95.97deg,
                 rgba(0, 0, 0, 0.4) 36.36%,
                 rgba(0, 0, 0, 0) 51.43%),
-            url('../img/hero-tb.webp');
+            url('../images/hero-tb.webp');
     }
 }
 
@@ -58,7 +58,7 @@ screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
         background-image: linear-gradient(95.97deg,
                 rgba(0, 0, 0, 0.4) 36.36%,
                 rgba(0, 0, 0, 0) 51.43%),
-            url('../img/hero-tb@2.webp');
+            url('../images/hero-tb@2.webp');
     }
 }
 
@@ -70,7 +70,7 @@ screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
         background-image: linear-gradient(95.97deg,
                 rgba(0, 0, 0, 0.4) 36.36%,
                 rgba(0, 0, 0, 0) 51.43%),
-            url('../img/hero-dt.webp');
+            url('../images/hero-dt.webp');
     }
 
     @media screen and (min-resolution: 192dpi),
@@ -80,7 +80,7 @@ screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
             background-image: linear-gradient(95.97deg,
                     rgba(0, 0, 0, 0.4) 36.36%,
                     rgba(0, 0, 0, 0) 51.43%),
-                url('../img/hero-dt@2.webp');
+                url('../images/hero-dt@2.webp');
         }
     }
 }
@@ -103,7 +103,7 @@ screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
 
 @media (min-width: 768px) {
     .hero-title {
-        padding-top: 260px;
+        padding-top: 0px;
         margin-bottom: 32px;
         font-size: 60px;
         line-height: 70px;
@@ -146,6 +146,13 @@ screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
         padding: 16px 64px;
         font-size: 18px;
         line-height: 28px;
+        margin-bottom: 295px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero-btn-leave {
+        margin-bottom: 179px;
     }
 }
 
