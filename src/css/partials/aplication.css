@@ -29,9 +29,9 @@ img {
     margin: 0 auto;
 }
 
-.apply {
+/* .apply {
     padding: 64px 0;
-}
+} */
 
 .apply__head {
     text-align: center;
@@ -244,10 +244,6 @@ img {
         padding: 0 32px;
     }
 
-    .apply {
-        padding: 80px 0;
-    }
-
     .apply__title {
         font-size: 40px;
     }
@@ -304,10 +300,6 @@ img {
     .container {
         max-width: 1158px;
         padding: 0 15px;
-    }
-
-    .apply {
-        padding: 80px 0 64px;
     }
 
     .apply__body {
