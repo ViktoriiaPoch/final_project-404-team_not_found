@@ -1,6 +1,3 @@
-.lessons-section {
-  padding: 40px 0;
-}
 
 .section-header {
   margin-bottom: 40px;
@@ -39,6 +36,7 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  
 }
 
 .pricing-card {
@@ -53,6 +51,8 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
+
+  
 }
 
 .pricing-card.featured {
@@ -106,8 +106,12 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  transition: all 0.3s ease;
 }
 
+.card-button:hover{
+  background: #38ae5f;
+}
 
 
 /* Featured card styles */
@@ -128,8 +132,8 @@
 
 .pricing-card.featured .card-button:hover {
   background: #f0f0f0;
+  color: #4dc274;
 }
-
 
 
 /* Tablet devices */
