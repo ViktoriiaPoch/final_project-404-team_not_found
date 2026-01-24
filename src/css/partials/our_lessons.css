@@ -51,8 +51,11 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
+ transition: transform 0.3s ease
+}
 
-  
+.pricing-card:hover {
+    transform: translateY(-4px);
 }
 
 .pricing-card.featured {
