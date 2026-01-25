@@ -30,8 +30,8 @@ img {
 }
 
 .apply__head {
-  text-align: center;
-  margin-bottom: 64px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .apply__title {
@@ -244,6 +244,10 @@ img {
     .container {
         max-width: 768px;
         padding: 0 32px;
+    }
+
+    .apply__head {
+    margin-bottom: 64px;
     }
 
     .apply__title {
