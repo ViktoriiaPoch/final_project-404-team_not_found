@@ -273,12 +273,45 @@
 .proposal-icon {
   width: 20px;
   height: 20px;
-  flex: 0 0 20px;
+  flex-shrink: 0;
+  background-color: #4dc274;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .proposal-icon {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
+  }
+}
+.proposal-icon__svg {
+  width: 13px;
+  height: 13px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
-  background-image: url('./images/icons.svg#icon-check');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
+@media (min-width: 768px) {
+  .proposal-icon__svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.proposal-icon use {
+  stroke: #fff;
+  fill: none;
+}
+@media (min-width: 768px) {
+  .proposal-icon use {
+    width: 30;
+    height: 30;
+  }
 }
 
 .proposal-text {
