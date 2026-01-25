@@ -180,8 +180,7 @@
 }
 @media (min-width: 1280px) {
   .footer-page {
-    padding-top: 64px;
-    padding-bottom: 23px;
+    padding: 64px 128px 23px 128px;
   }
   .footer-menu-list {
     margin-bottom: 64px;
