@@ -1,7 +1,7 @@
 /* __________Styles for Mobile devices */
 
 .section {
-  margin-bottom: 80px;
+  padding: 40px 0;
 }
 
 .section-title {
@@ -20,11 +20,28 @@
   color: rgba(18, 20, 23, 0.5);
 }
 
+.title-accent {
+  position: relative;
+  display: inline-block;
+}
+
+.title-accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 20px;
+  background-color: #bee8cc;
+  border-radius: 8px;
+  z-index: -1;
+}
+
 /* __________Styles for Tablet devices */
 
 @media only screen and (min-width: 768px) {
   .section {
-    margin-bottom: 100px;
+    padding: 50px 0;
   }
   .section-title {
     font-size: 40px;
@@ -40,7 +57,7 @@
 
 @media only screen and (min-width: 1280px) {
   .section {
-    margin-bottom: 150px;
+    padding: 75px 0;
   }
   .section-title {
     /* так само як таблет */

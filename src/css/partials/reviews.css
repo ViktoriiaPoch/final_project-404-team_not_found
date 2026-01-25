@@ -5,22 +5,6 @@
   margin-bottom: 16px;
 }
 
-.reviews-title-accent {
-  position: relative;
-  display: inline-block;
-}
-
-.reviews-title-accent::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 100%;
-  height: 20px;
-  background-color: #bee8cc;
-  border-radius: 8px;
-  z-index: -1;
-}
 .reviews .section-subtitle {
   margin-bottom: 36px;
 }

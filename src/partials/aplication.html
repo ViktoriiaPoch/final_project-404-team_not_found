@@ -1,107 +1,169 @@
 <section class="section apply" id="contact-us">
-    <div class="container">
-        <div class="apply__head">
-            <h2 class="apply__title">
-                Leave an <span class="apply__title-accent">application</span>
-            </h2>
+  <div class="container container-apply">
+    <div class="apply__head">
+      <h2 class="apply__title">
+        Leave an <span class="apply__title-accent">application</span>
+      </h2>
 
-            <p class="apply__text">
-                Please use the form below to contact us. Enter your name, email, and message and we’ll
-                get back to you shortly.
-            </p>
-        </div>
-
-        <div class="apply__body">
-            <aside class="apply-card" aria-hidden="true">
-                <img class="apply-card__img" src="/images/application/girl.jpg"
-                    srcset="/images/application/girl.jpg 1x, /images/application/girl@2x.jpg 2x"
-                    alt="Girl with headphones" loading="lazy" />
-
-                <div class="apply-card__content">
-                    <p class="apply-card__number">1000</p>
-                    <p class="apply-card__desc">
-                        of our online English language lessons! This journey has been full of discovery,
-                        growth and unforgettable moments, and we are happy to share this joyful event with you.
-                    </p>
-                </div>
-            </aside>
-
-            <form class="apply-form" name="leave-application" autocomplete="on">
-                <div class="apply-form__fields">
-                    <!-- Name (letters + spaces only) -->
-                    <label class="apply-form__label">
-                        <span class="visually-hidden">Name</span>
-                        <input class="apply-form__input" type="text" name="user_name" placeholder="Name"
-                            autocomplete="name" required maxlength="50" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє ]+$"
-                            title="Only letters and spaces are allowed." />
-                    </label>
-
-                    <!-- Email (letters, digits, @ and . only) -->
-                    <label class="apply-form__label">
-                        <span class="visually-hidden">Email</span>
-                        <input class="apply-form__input" type="email" name="user_email" placeholder="Email"
-                            autocomplete="email" inputmode="email" required maxlength="100" pattern="^[A-Za-z0-9@.]+$"
-                            title="Only letters, numbers, @ and dot (.) are allowed." />
-                    </label>
-
-                    <!-- Phone (digits and + - only) -->
-                    <label class="apply-form__label">
-                        <span class="visually-hidden">Phone</span>
-                        <input class="apply-form__input" type="tel" name="user_phone" placeholder="Phone"
-                            autocomplete="tel" inputmode="tel" maxlength="20" pattern="^[0-9+-]+$"
-                            title="Only digits, plus (+) and minus (-) are allowed." />
-                    </label>
-
-                    <!-- Comment -->
-                    <label class="apply-form__label">
-                        <span class="visually-hidden">Comment</span>
-                        <textarea class="apply-form__textarea" name="user_comment" placeholder="Comment"
-                            rows="5"></textarea>
-                    </label>
-                </div>
-
-                <!-- Teachers -->
-                <fieldset class="apply-form__teacher">
-                    <legend class="apply-form__legend">Choose a teacher</legend>
-
-                    <div class="apply-form__radios">
-                        <label class="radio">
-                            <input class="radio__input" type="radio" name="teacher" value="Maria" checked />
-                            <span class="radio__control" aria-hidden="true"></span>
-                            <span class="radio__text">Maria</span>
-                        </label>
-
-                        <label class="radio">
-                            <input class="radio__input" type="radio" name="teacher" value="Artem" />
-                            <span class="radio__control" aria-hidden="true"></span>
-                            <span class="radio__text">Artem</span>
-                        </label>
-
-                        <label class="radio">
-                            <input class="radio__input" type="radio" name="teacher" value="Ilona" />
-                            <span class="radio__control" aria-hidden="true"></span>
-                            <span class="radio__text">Ilona</span>
-                        </label>
-
-                        <label class="radio">
-                            <input class="radio__input" type="radio" name="teacher" value="Volodymyr" />
-                            <span class="radio__control" aria-hidden="true"></span>
-                            <span class="radio__text">Volodymyr</span>
-                        </label>
-                    </div>
-                </fieldset>
-
-                <!-- Submit -->
-                <button class="apply-form__btn" type="submit">Send</button>
-
-                <p class="apply-form__policy">
-                    By clicking on “Send” button, you agree to our
-                    <a class="apply-form__link" href="#" target="_blank" rel="noopener noreferrer">
-                        Privacy Policy
-                    </a>,
-                    and allow Promodo to use this information for marketing purposes.
-                </p>
-            </form>
-        </div>
+      <p class="apply__text">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we’ll get back to you shortly.
+      </p>
     </div>
+
+    <div class="apply__body">
+      <aside class="apply-card" aria-hidden="true">
+        <img
+          class="apply-card__img"
+          src="/images/application/girl.jpg"
+          srcset="
+            /images/application/girl.jpg    1x,
+            /images/application/girl@2x.jpg 2x
+          "
+          alt="Girl with headphones"
+          loading="lazy"
+        />
+
+        <div class="apply-card__content">
+          <p class="apply-card__number">1000</p>
+          <p class="apply-card__desc">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </aside>
+
+      <form class="apply-form" name="leave-application" autocomplete="on">
+        <div class="apply-form__fields">
+          <!-- Name (letters + spaces only) -->
+          <label class="apply-form__label">
+            <span class="visually-hidden">Name</span>
+            <input
+              class="apply-form__input"
+              type="text"
+              name="user_name"
+              placeholder="Name"
+              autocomplete="name"
+              required
+              maxlength="50"
+              pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє ]+$"
+              title="Only letters and spaces are allowed."
+            />
+          </label>
+
+          <!-- Email (letters, digits, @ and . only) -->
+          <label class="apply-form__label">
+            <span class="visually-hidden">Email</span>
+            <input
+              class="apply-form__input"
+              type="email"
+              name="user_email"
+              placeholder="Email"
+              autocomplete="email"
+              inputmode="email"
+              required
+              maxlength="100"
+              pattern="^[A-Za-z0-9@.]+$"
+              title="Only letters, numbers, @ and dot (.) are allowed."
+            />
+          </label>
+
+          <!-- Phone (digits and + - only) -->
+          <label class="apply-form__label">
+            <span class="visually-hidden">Phone</span>
+            <input
+              class="apply-form__input"
+              type="tel"
+              name="user_phone"
+              placeholder="Phone"
+              autocomplete="tel"
+              inputmode="tel"
+              maxlength="20"
+              pattern="^[0-9+-]+$"
+              title="Only digits, plus (+) and minus (-) are allowed."
+            />
+          </label>
+
+          <!-- Comment -->
+          <label class="apply-form__label">
+            <span class="visually-hidden">Comment</span>
+            <textarea
+              class="apply-form__textarea"
+              name="user_comment"
+              placeholder="Comment"
+              rows="5"
+            ></textarea>
+          </label>
+        </div>
+
+        <!-- Teachers -->
+        <fieldset class="apply-form__teacher">
+          <legend class="apply-form__legend">Choose a teacher</legend>
+
+          <div class="apply-form__radios">
+            <label class="radio">
+              <input
+                class="radio__input"
+                type="radio"
+                name="teacher"
+                value="Maria"
+                checked
+              />
+              <span class="radio__control" aria-hidden="true"></span>
+              <span class="radio__text">Maria</span>
+            </label>
+
+            <label class="radio">
+              <input
+                class="radio__input"
+                type="radio"
+                name="teacher"
+                value="Artem"
+              />
+              <span class="radio__control" aria-hidden="true"></span>
+              <span class="radio__text">Artem</span>
+            </label>
+
+            <label class="radio">
+              <input
+                class="radio__input"
+                type="radio"
+                name="teacher"
+                value="Ilona"
+              />
+              <span class="radio__control" aria-hidden="true"></span>
+              <span class="radio__text">Ilona</span>
+            </label>
+
+            <label class="radio">
+              <input
+                class="radio__input"
+                type="radio"
+                name="teacher"
+                value="Volodymyr"
+              />
+              <span class="radio__control" aria-hidden="true"></span>
+              <span class="radio__text">Volodymyr</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Submit -->
+        <button class="apply-form__btn" type="submit">Send</button>
+
+        <p class="apply-form__policy">
+          By clicking on “Send” button, you agree to our
+          <a
+            class="apply-form__link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy </a
+          >, and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
 </section>

@@ -25,23 +25,7 @@
     margin: 16px auto 0;
     /* ← 16px зверху, центрування */
 }
-.section-title-accent {
-    position: relative;
-    display: inline-block;
-    z-index: 0;
-}
 
-.section-title-accent::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -0.18em;
-    height: 0.5em;
-    background: #BEE8CC;
-    border-radius: 999px;
-    z-index: -1;
-}
 
 .features-list {
     display: flex;
@@ -167,10 +151,7 @@
 }
 
 /* DESKTOP STYLES (1200px+) */
-@media only screen and (min-width: 1200px) {
-    .about-us.section {
-        padding-top: 96px;
-    }
+@media only screen and (min-width: 1280px) {
 
     .section-text {
         max-width: 832px;
