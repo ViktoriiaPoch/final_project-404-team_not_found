@@ -151,10 +151,7 @@
 }
 
 /* DESKTOP STYLES (1200px+) */
-@media only screen and (min-width: 1200px) {
-    .about-us.section {
-        padding-top: 96px;
-    }
+@media only screen and (min-width: 1280px) {
 
     .section-text {
         max-width: 832px;
