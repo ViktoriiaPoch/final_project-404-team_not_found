@@ -10,11 +10,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* Цей клас ми будемо додавати через JS, коли треба сховати хедер */
-.page-header.is-hidden {
-  transform: translateY(-100%);
-}
-
 .container.header-container {
   display: flex;
   align-items: center;
