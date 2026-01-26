@@ -1,6 +1,5 @@
 /* Our Teachers Section */
 
-
 .section-team {
   padding: 80px 0;
   background-color: #fff;
@@ -8,7 +7,7 @@
 }
 
 .section-title {
-font-size: 40px;
+  font-size: 40px;
 }
 
 .title-accent-green {
@@ -41,25 +40,24 @@ font-size: 40px;
 /* --- Team Cards --- */
 
 .gallery-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 32px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .item-gallery.card {
-    width: 232px;
-    height: 318px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 41px 16px;
-    box-sizing: border-box;
+  width: 232px;
+  height: 318px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  /* padding: 41px 16px; */
+  box-sizing: border-box;
 }
-
 
 /* -- Card Content -- */
 
@@ -85,39 +83,39 @@ font-size: 40px;
 }
 
 .team-photo {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 16px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 16px;
 }
 
 .team-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
 }
 
 @media only screen and (min-width: 1200px) {
-    .container {
-        max-width: 1280px;
-        padding: 0 15px;
-    }
+  .container {
+    max-width: 1280px;
+    padding: 0 15px;
+  }
 }
-
-/* Mobile */
+/* 
+Mobile */
 @media (min-width: 375px) {
-    .gallery-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 24px;
-    }
+  .gallery-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
 
-    .item-gallery.card {
-        flex: 1 1 calc(100% - 32px);
-        max-width: 264px;
-            }
+  .item-gallery.card {
+    flex: 1 1 calc(100% - 32px);
+    max-width: 335px;
+  }
 }
 
 /* Tablet */
@@ -135,6 +133,9 @@ font-size: 40px;
     justify-content: space-around;
     gap: 32px;
   }
+  .item-gallery.card {
+    max-width: 272px;
+  }
 }
 
 /* Desktop */
@@ -151,5 +152,8 @@ font-size: 40px;
   .gallery-list {
     justify-content: center;
     gap: 32px;
+  }
+  .item-gallery.card {
+    max-width: 232px;
   }
 }
