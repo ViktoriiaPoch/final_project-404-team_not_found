@@ -1,51 +1,72 @@
 /* __________Styles for Mobile devices */
 
 .section {
-  margin-bottom: 80px 0;
+  padding: 40px 0;
 }
 
 .section-title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 1.125;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   text-align: center;
   color: #121417;
 }
 
-.section-text {
+.section-subtitle {
   font-size: 14px;
-  line-height: 1.71429;
+  line-height: 1.7;
   text-align: center;
   color: rgba(18, 20, 23, 0.5);
+}
+
+.title-accent {
+  position: relative;
+  display: inline-block;
+}
+
+.title-accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 20px;
+  background-color: #bee8cc;
+  border-radius: 8px;
+  z-index: -1;
 }
 
 /* __________Styles for Tablet devices */
 
 @media only screen and (min-width: 768px) {
   .section {
-    margin-bottom: 100px 0;
+    padding: 50px 0;
   }
   .section-title {
     font-size: 40px;
     line-height: 1.2;
   }
-  .section-text {
+  .section-subtitle {
     font-size: 18px;
-    line-height: 1.66667;
+    line-height: 1.7;
   }
 }
 
 /* __________Styles for Desktop devices */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .section {
-    margin-bottom: 150px 0;
+    padding: 75px 0;
   }
   .section-title {
     /* так само як таблет */
   }
-  .section-text {
+  .section-subtitle {
     /* так само як таблет */
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

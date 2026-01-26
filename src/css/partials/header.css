@@ -1,4 +1,268 @@
-.header {
-  background-color: tomato;
-  font-size: 40px;
+.page-header {
+  background-color: #fff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.container.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+}
+
+.nav-list,
+.header-social-list {
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container.header-container {
+    padding: 0;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-social-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .header-social-item .social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #121417;
+    border-radius: 10px;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+  }
+
+  .social-link:hover,
+  .social-link:focus {
+    fill: #4dc274;
+    border: 1px solid rgba(77, 194, 116, 0.1);
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.header-logo {
+  display: block;
+  color: #121417;
+  padding: 20px 0;
+}
+
+.logo-part {
+  color: #4dc274;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #121417;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #4dc274;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+/* Burger */
+
+.burger-btn-mobile {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-btn-tablet {
+  display: none;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-icon {
+  display: block;
+  stroke: #121417;
+}
+
+.mobile-menu-close {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.tablet-menu-close {
+  display: none;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.close-icon {
+  display: block;
+  fill: #fff;
+}
+
+/* MENU / */
+
+/* Mobile */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 20, 23, 0.4);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.container.mobile-menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 240px;
+  min-width: auto;
+  height: 100%;
+  background-color: #4dc274;
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.tablet-menu-close {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 32px;
+}
+
+.menu-nav {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-nav-item {
+  padding: 10px 0;
+  /* Зробила більшу область натискання */
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fff;
+}
+
+.menu-social-list {
+  display: flex;
+  gap: 12px;
+}
+
+.menu-social-item {
+  width: 42px;
+  height: 42px;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+  .menu-soc-list-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .container.mobile-menu-container {
+    width: 384px;
+  }
+  .mobile-menu-close {
+    display: none;
+  }
+  .tablet-menu-close {
+    display: block;
+  }
+  .burger-btn-mobile {
+    display: none;
+  }
+  .burger-btn-tablet {
+    display: block;
+  }
+  .menu-social-item {
+    width: 44px;
+    height: 44px;
+  }
+  .mobile-menu-close {
+    display: none;
+  }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1280px) {
+  .mobile-menu {
+    display: none;
+  }
+  .burger-btn-mobile,
+  .burger-btn-tablet {
+    display: none;
+  }
+  .tablet-menu-close,
+  .mobile-menu-close {
+    display: none;
+  }
 }
